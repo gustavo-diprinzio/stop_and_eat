@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+body{
+    background-image: url(menu-img/fondo.jpg);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-size: cover;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    padding: 50px;
+}
+header{
+    background-color: rgba(7,7,7,255);
+    display: flex; 
+    flex-direction: column;
+    border-bottom: 2.5px solid black;
+    box-shadow: 0.5px 7px 25px rgb(36, 36, 53);
+}
+header div img{
+    margin-left: 100px;
+    width: 10%;
+    margin-top: 5px;
+}
+.navegacion{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-evenly;     /*centrar eje x*/
+    align-items: center;               /*centrar eje y*/
+}
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    color: #f7d96d; 
+}
+.texto_nav{
+    font-size: 20.55px;
+}
+
+header div h1{
+    margin-left: 50px;
+    width: 28.5%;
+    margin-top: 20px;
+}
+
+/*MENU*/
+
+main h2{
+    font-family: 'Bungee Spice', cursive;
+    font-size: 40px;
+    text-align:center;
+    margin-top: 30px;
+    -webkit-text-stroke: 2px #ffdd61;
+}
+
+.circulo{
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 5px 10px 70px 15px  #000000; 
+    border-radius: 50%;
+    width: 200px;
+    height: 270px;
+    object-fit: cover;
+}
+.secundario {
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.secundario div {
+    width: 25%;
+    padding: 2%;
+}
+.secundario div img {
+    width: 100%;
+    margin-bottom: 2em;
+}
+.secundario div h3{
+    font-family: 'Bungee Spice', cursive;
+    font-size: 35px;
+    color: #fac800; 
+    -webkit-text-stroke: 1.5px black;
+    margin-bottom: 13px;
+}
+
+/*FORMULARIO REGISTRO*/
+#formulario{
+    margin-top: 3%;
+    margin-left: 21.5%;
+    width: 60%;
+    height: 33em;
+    border-radius: 25px;
+    border: 1.5px solid #f7d96d;
+    background-color: #e6e6e6;
+    display: flex;
+}
+#formulario div img{
+    margin-left: 78px;
+    width: 60%;
+    height: 50%;
+}
+.columnas_de_contacto{
+    width: 50%;
+    padding: 0 2em;
+}
+.columnas_de_contacto p{
+    width: 80%;
+    font-size: 17.5px;
+
+}
+.columnas_de_contacto h2{
+    font-size: 3rem;
+    margin: 1em 1em;
+    text-shadow: 2px  3px 5px rgba(85, 85, 85, 0.568);
+}
+.bug{
+    font-size: 1.7rem;
+    margin: 1em 1em;
+    text-shadow: 2px  3px 5px rgba(85, 85, 85, 0.568);
+}
+
+.columnas_de_contacto table{
+    margin-top: 3em;
+}
+
+.columnas_de_contacto table tr{
+    height: 2em;
+    font-size: 1.2rem;
+}
+.columnas_de_contacto table tr td{
+    padding-left: 1rem;
+    height: 2.2em;
+}
+.columnas_de_contacto table tr a{
+    color: #202020;
+}
+.columnas_de_contacto table tr:hover .redes{
+    font-size: 1.3rem;
+}
+
+.columnas_de_contacto table tr td i{
+    color: #202020;
+    padding: 0.5em;
+    border-radius: 50px;
+}
+.columnas_de_contacto table tr:hover td i{
+    color: #e6e6e6;
+    background-color: #202020;
+}
+
+.nombre_apellido{
+    display: flex;
+}
+label{
+display: block;
+margin: 0.5em 0;
+}
+.nombreyapellido{
+    width: 50%;
+}
+input{
+   border-radius: 15px;
+   height: 3em;
+   border: 1px solid white;
+}
+input:focus, textarea:focus{
+    border: 1px solid #f7d96d;
+    box-shadow: 0px 0px 5px #f7d96d;
+}
+textarea{
+    width: 90%; 
+    border-radius: 15px;
+    height: 7em;
+    border: 1px solid white;
+}
+.nombreyapellido input{
+    width: 80%;
+}
+
+.bloque_datos input, textarea{
+    width: 90%;
+}
+.bloque_datos textarea{
+    width: 90%;
+    padding: 0.5em 0;
+    resize: none;
+}
+form .submit input{
+    width: 8em;
+    margin: 0.5em 0;
+    background-color:#f7d96d;
+}
+.submit .input_distinto{
+    width: 10em;
+    margin: 0.5em 0;
+    background-color:#f7d96d;
+}
+form .submit input{
+    width: 8em;
+    margin: 0.5em 0;
+    background-color:#f7d96d;
+}
+.submit input:hover{
+    font-weight: bold;
+    transition: 0.4s;
+    box-shadow: 0px  3px 5px rgba(85, 85, 85, 0.568);
+}
+
+/*proceser al pago*/
+div h3 form{
+    text-align: center;
+    color: aqua;
+} 
+
+/*carrito*/
+.boton_carrito{
+    width: 100px;
+    height: 50px;
+    font-size: 20.55px;
+    color: #f7d96d; 
+}
+.boton_carrito:hover{
+    display: block;
+    color: #f7d96d; 
+}
+.botonMenu{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+}
+
+/*TABLE GRID*/
+.container-table{
+    width: 70%;
+    background-color: #e6e6e6;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 16.7%);
+    grid-auto-rows: 50px; 
+}
+
+.table__title{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-color: #cbcaca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.table__header, .table__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/*formulario_gestion*/
+#formulario_gestion{
+    margin: 20px auto;
+    width: 70%;
+    height: 33em;
+    border-radius: 25px;
+    border: 1.5px solid #f7d96d;
+    background-color: #e6e6e6;
+    display: flex;    
+    flex-direction: column;
+    padding: 30px;
+}
+#formulario_gestion .ingreso_nuevo_menu h3{
+    text-align: center;
+}
+form .submit input{
+    width: 8em;
+    margin: 0.5em 0;
+    background-color:#f7d96d;
+}
+.secundario div table thead tr th{
+    background-color: aqua;
+}
+thead{
+    background-color: aqua;
+}
+
+tr{
+    background-color: aqua;
+}
+th{
+    background-color: aqua;
+
+}
